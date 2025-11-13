@@ -13,3 +13,15 @@ console.log(isPrime(10)); // false
 
 // Export function (optional, if needed for later)
 module.exports = isPrime;
+
+// Function to check if a number is even
+function evenOdd(num) {
+  return num % 2 === 0; // true for even, false for odd
+}
+
+// Example test
+console.log(evenOdd(4));  // true
+console.log(evenOdd(7));  // false
+
+// Export function (optional)
+module.exports = { isPrime, evenOdd };
